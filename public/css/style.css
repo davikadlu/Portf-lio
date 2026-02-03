@@ -1,0 +1,53 @@
+.mid-center
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2% 0px 0px 0px;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.mid-center div div
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3% 0px 0px 0px;
+}
+
+/* -- Content --*/
+main
+{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 30%;
+}
+
+
+main div.content
+{
+    width: 30pc;
+    height: auto;
+    margin: 0%;
+    border-block: 1px solid black;
+    writing-mode: horizontal-tb;
+}
+
+main div.content div.image
+{
+    margin: 0%;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(78, 204, 78);
+}
+
+
+a
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2pc;
+    text-decoration: none;
+}
