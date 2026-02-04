@@ -3,9 +3,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 2% 0px 0px 0px;
+    margin: 2% 0% 0px 25%;
     align-items: center;
-    width: auto;
+    width: 50pc;
     height: auto;
 }
 
@@ -15,6 +15,21 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 3% 0px 0px 0px;
+}
+
+.mid-center .div-initial
+{
+    margin-bottom: 10%;
+}
+
+.mid-center div div p
+{
+    margin: 0px 10% 0px -30%;
+}
+
+.content p
+{
+    margin: none;
 }
 
 /* -- Content --*/
@@ -51,3 +66,39 @@ a
     font-size: 1.2pc;
     text-decoration: none;
 }
+
+
+/*====== CONTENT FILES ========*/
+
+.text-center-content
+{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 420px) {
+
+    .mid-center {
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    main div.content {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    .content p {
+        margin: 0;
+        text-align: left;
+        word-wrap: break-word;
+    }
+}
+
+

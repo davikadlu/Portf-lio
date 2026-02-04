@@ -10,8 +10,8 @@ app.get("/home", (req, res) => {
   res.sendFile(path.join(__dirname + "/views", "/index.html"))
 });
 
-app.get("/crud", (req, res) => {
-  res.send("salve!")
+app.get("/create-read-update-delete", (req, res) => {
+  res.sendFile(path.join(__dirname + "/views", "crud.html"))
 })
 
 app.listen(3000, () => {
