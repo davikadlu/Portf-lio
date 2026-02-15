@@ -6,8 +6,12 @@ app.use(express.static("public"));
 
 app.use(express.static(path.join(__dirname, 'public')))
 
+app.get("/", (req, res) => {
+  res.send("")
+})
+
 app.get("/home", (req, res) => {
-  res.sendFile(path.join(__dirname + "/views", "/index.html"))
+  res.sendFile(path.join(__dirname + "/views", "/home.html"))
 });
 
 app.get("/create-read-update-delete", (req, res) => {
