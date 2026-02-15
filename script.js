@@ -7,7 +7,7 @@ app.use(express.static("public"));
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get("/", (req, res) => {
-  res.send(path.join(__dirname + "/views", "/index.html"))
+  res.sendFile(path.join(__dirname + "/views", "/index.html"))
 })
 
 app.get("/home", (req, res) => {
